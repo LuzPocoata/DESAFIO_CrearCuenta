@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;     /*tipo de letra Arial ..*/
+    background-image: url('https://thumbs.dreamstime.com/b/modelo-incons%C3%BAtil-de-las-patas-del-perro-33365592.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 5px;
+}
+img {      /*Para las imagenes de mascotas (animalitos)*/
+    width: 30%;
+    height: auto;
+    border-radius: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin-right: 5%;
+}
+.contenedor {          /* el recuadro del formulario*/
+    background: #e2d5df;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="email"], input[type="password"] {    /*los input's*/
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a3c9df;
+    border-radius: 4px;
+}
+button {   /*Para los botones*/
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+}
+button:hover {    /*Para que cuando el cursor pase cambie de color */
+    background-color: #0056b3;
+}
+/*Estilo para los mensajes que salen en la pantalla*/
+#mensaje, #mensajeLogin, #mensajeRecuperacion {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.input-group {               /*Para los grupos de input's*/ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+}
+.input-group input {    /* Estilo para los cuadros de los input's*/
+    flex-grow: 1;
+    border: none;
+    margin-bottom: 0;   /*Para que se alinee */
+    padding: 10px;
+}
+.input-group span.contra {   /* Estilo para centrear el ojito y el cuadro de la contraseña*/
+    padding: 10px;
+    background-color: #eee;
+    border-left: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+}
+/* Estilo para el input de teléfono, del que esta en el span (+591)*/
+.input-group span {
+    padding: 10px 5px;
+    background-color: #eee;
+}
+
+/* Responsivo para celulares (hasta 767px)*/
+@media (max-width: 767px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    img {
+        width: 50%;
+        max-width: 250px;
+        border-radius: 125px;
+        margin-bottom: 10px;
+    }
+    
+    .contenedor {
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de Sesion</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <img src="https://thumbs.dreamstime.com/b/grupo-grande-de-animales-aislado-en-el-fondo-blanco-55938881.jpg" alt="mascotas">
+    <div class="contenedor">
+        <h2>Iniciar Sesion</h2>
+        <form id="loginForm">
+            <input type="email" id="loginCorreo" placeholder="Nombre de Usuario" required>
+            <div class="input-group">
+                <input type="password" id="loginContrasena" placeholder="Contraseña" required>
+                <span class="contra" id="ojoLogin">👁️</span>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="mensajeLogin"></p>
+        <p id="enlaceRecuperacion" style="display:none;">
+            <a id="enlaceRecuperar" href="../pages/recuperacion.html">Recuperar Contraseña</a>
+        </p>
+        <p>¿No tienes cuenta? <a id="enlaceRegistro" href="../index.html">Regístrate</a></p>
+    </div>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

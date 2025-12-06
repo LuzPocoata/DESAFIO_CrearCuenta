@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="https://www.prensalibre.com/wp-content/uploads/2024/04/01-NOTA-WEB-B-27.jpg?quality=52" alt="mascotas">
+    <div class="contenedor">
+        <h2>Crear Cuenta</h2>
+        <form id="registroForm">
+            <input type="text" id="nombreCompleto" placeholder="Nombre Completo" required>
+            <input type="email" id="correoUsuario" placeholder="Nombre de Usuario" required>
+            <div class="input-group">
+                <span>+591</span>
+                <input type="text" id="telefono" placeholder="Número de Teléfono" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="contrasena" placeholder="Contraseña" required>
+                <span class="contra" id="ojoContrasena">👁️</span>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+        <p id="mensaje"></p>
+        <p>¿Ya tienes cuenta? <a id="enlaceLogin" href="pages/iniciosesion.html">Inicia Sesión</a></p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
